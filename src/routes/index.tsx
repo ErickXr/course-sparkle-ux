@@ -375,15 +375,15 @@ function Cursos() {
             </article>
           ))}
 
-          <div className="flex flex-col justify-between rounded-3xl bg-primary p-6 text-primary-foreground lg:col-span-4">
+          <div className="flex flex-col rounded-3xl bg-primary p-6 md:p-8 text-primary-foreground lg:col-span-4">
             <span className="rail-label opacity-70">próximo lançamento</span>
-            <p className="mt-8 font-display text-3xl font-light leading-tight">
+            <p className="mt-6 max-w-xs font-display text-3xl font-light leading-tight">
               Ergonomia aplicada ao PGR
             </p>
             <p className="mt-3 text-sm opacity-70">Entra na trilha em outubro, sem custo extra.</p>
             <a
               href="#planos"
-              className="mt-8 inline-flex w-fit items-center gap-2 rounded-full bg-background px-5 py-2.5 text-sm font-semibold text-foreground"
+              className="mt-auto inline-flex w-fit items-center gap-2 rounded-full bg-background px-5 py-2.5 text-sm font-semibold text-foreground"
             >
               Entrar na lista →
             </a>
