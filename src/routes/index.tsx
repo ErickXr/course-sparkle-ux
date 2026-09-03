@@ -271,16 +271,18 @@ function Setores() {
         <span className="shrink-0 pl-5 rail-label text-muted-foreground">
           usado por times de segurança em
         </span>
-        <div className="flex w-max animate-marquee gap-10">
-          {lista.map((s, i) => (
-            <span
+        <div className="relative flex-1 overflow-hidden">
+          <div className="flex w-max animate-marquee gap-10">
+            {lista.map((s, i) => (
+              <span
               key={`${s}-${i}`}
               className="flex shrink-0 items-center gap-10 font-display text-xl font-light text-secondary-foreground/70"
             >
               {s}
               <span className="size-1.5 rounded-full bg-primary/40" />
             </span>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
@@ -343,7 +345,7 @@ function Cursos() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-5 lg:grid-cols-8">
+        <div className="mt-14 grid gap-5 lg:auto-rows-fr lg:grid-cols-6">
           {cursos.map((curso) => (
             <article
               key={curso.titulo}
@@ -373,7 +375,7 @@ function Cursos() {
             </article>
           ))}
 
-          <div className="flex flex-col justify-between rounded-3xl bg-primary p-6 text-primary-foreground lg:col-span-2">
+          <div className="flex flex-col justify-between rounded-3xl bg-primary p-6 text-primary-foreground lg:col-span-4">
             <span className="rail-label opacity-70">próximo lançamento</span>
             <p className="mt-8 font-display text-3xl font-light leading-tight">
               Ergonomia aplicada ao PGR
